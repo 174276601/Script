@@ -293,7 +293,7 @@ function kdHost(api,body) {
     body: body,
     //timeout: 200,
 
-function sign() {
+function getsign() {
     return new Promise((resolve, reject) => {
         const signurl = {
             url: 'https://kd.youth.cn/TaskCenter/sign',
