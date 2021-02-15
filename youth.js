@@ -291,7 +291,7 @@ function kdHost(api,body) {
      'X-Requested-With': 'XMLHttpRequest'
     },
     body: body,
-    //timeout: 1000,
+    //timeout: 200,
 
 function sign() {
     return new Promise((resolve, reject) => {
@@ -321,7 +321,8 @@ function sign() {
     })
 }
 
-async function signInfo() {
+async 
+function signInfo() {
     return new Promise((resolve, reject) => {
         const infourl = {
             url: 'https://kd.youth.cn/TaskCenter/getSign',
