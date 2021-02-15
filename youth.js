@@ -6,15 +6,15 @@
 食用方法请看Sunert大佬中青看点
 ~~~~~~~~~~~~~~~~
 [MITM]
-hostname = *.youth.cn, ios.baertt.com 
+hostname = kd.youth.cn, ios.baertt.com 
 
 -----------------
 QX 1.0. 7+ :
 [task_local]
-0,30 * * * * https://raw.githubusercontent.com/jiuli12/Script/main/youth.js
+0,30 * * * * https://raw.githubusercontent.com/174276601/Script/main/youth.js
 
 [rewrite_remote]
-https://raw.githubusercontent.com/jiuli12/Script/main/youth_getCookie.conf, tag=中青GetCookie, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/174276601/Script/main/youth_getCookie.conf, tag=中青GetCookie, update-interval=86400, opt-parser=false, enabled=true
 */
 
 let s = 200 //各数据接口延迟
