@@ -279,6 +279,20 @@ async function all() {
 	} 
 }
 
+function kdHost(api,body) {
+  return {
+    url: 'https://kd.youth.cn/'+api+`&${myuid}`,
+    headers:{
+     'Accept': '*/*',
+     'Accept-Encoding': 'gzip, deflate, br',
+     'Referer': 'https://kd.youth.cn/h5/20190301taskcenter/ios/index.html?'+cookie,
+     'Host': 'kd.youth.cn',
+     'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148',
+     'X-Requested-With': 'XMLHttpRequest'
+    },
+    body: body,
+    //timeout: 1000,
+
 function sign() {
     return new Promise((resolve, reject) => {
         const signurl = {
