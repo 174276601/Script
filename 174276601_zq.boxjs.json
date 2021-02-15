@@ -1,9 +1,9 @@
 {
-  "id": "jiuli.app.sub",
-  "name": "jiuli 中青应用订阅",
-  "author": "@jiuli",
+  "id": "174276601.app.sub",
+  "name": "174276601 中青应用订阅",
+  "author": "@174276601",
   "icon": "",
-  "repo": "https://github.com/jiuli12/Script",
+  "repo": "https://github.com/174276601/Script",
   "apps": [{
     "id": "youthQD",
     "name": "中青多账号签到+转盘抽奖",
@@ -25,14 +25,14 @@
         "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
       }
     ],
-    "repo": "https://raw.githubusercontent.com/jiuli12/Script/main/youth.js",
-    "icons": ["https://raw.githubusercontent.com/jiuli12/Script/main/image/youth.png", "https://raw.githubusercontent.com/jiuli12/Script/main/image/youth.png"],
-    "script": "https://raw.githubusercontent.com/jiuli12/Script/main/youth.js"
+    "repo": "https://raw.githubusercontent.com/174276601/Script/main/youth.js",
+    "icons": ["https://raw.githubusercontent.com/174276601/Script/main/image/youth.png", "https://raw.githubusercontent.com/174276601/Script/main/image/youth.png"],
+    "script": "https://raw.githubusercontent.com/174276601/Script/main/youth.js"
   },{
     "id": "youthZDRead",
     "name": "中青多账号阅读",
     "keys": ["zqgetbody_body","index","zqgetbody_body2","index2","zqgetbody_body3","index3"],
-    "author": "@jiuli",
+    "author": "@174276601",
     "settings": [
        {
           "id": "zqReadLog",
@@ -56,8 +56,8 @@
         "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
       }
     ],
-    "repo": "https://raw.githubusercontent.com/jiuli12/Script/main/Youth_AutoRead.js",
-    "icons": ["https://raw.githubusercontent.com/jiuli12/Script/main/image/youth.png", "https://raw.githubusercontent.com/jiuli12/Script/main/image/youth.png"],
-    "script": "https://raw.githubusercontent.com/jiuli12/Script/main/Youth_AutoRead.js"
+    "repo": "https://raw.githubusercontent.com/174276601/Script/main/Youth_AutoRead.js",
+    "icons": ["https://raw.githubusercontent.com/174276601/Script/main/image/youth.png", "https://raw.githubusercontent.com/174276601/Script/main/image/youth.png"],
+    "script": "https://raw.githubusercontent.com/174276601/Script/main/Youth_AutoRead.js"
   } ]
 }
