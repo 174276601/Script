@@ -287,39 +287,9 @@ function kdHost(api,body) {
      'Accept-Encoding': 'gzip, deflate, br',
      'Referer': 'https://kd.youth.cn/h5/20190301taskcenter/ios/index.html?'+cookie,
      'Host': 'kd.youth.cn',
-     'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148',
-     'X-Requested-With': 'XMLHttpRequest'
-    },
-    body: body,
-    //timeout: 200,
+     'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 
-function getsign() {
-    return new Promise((resolve, reject) => {
-        const signurl = {
-            url: 'https://kd.youth.cn/TaskCenter/sign',
-            headers: JSON.parse(signheaderVal),
-        }
-        $.post(signurl, (error, response, data) => {
-			try{
-				signres = JSON.parse(data)
-				const date =  $.time(`MMdd`)
-				if (signres.status == 2) {
-				    signresult = `签到失败，Cookie已失效‼️`;
-				    $.msg($.name, signresult, "");
-				    return;
-				} else if (signres.status == 1) {
-				     signresult = `【签到结果】成功 🎉 明日+${signres.nextScore} `
-				} else if (signres.status == 0) {
-				  signresult = `【签到结果】已签到`;
-				}
-			} catch (e) {
-				$.logErr(e, resp)
-			} finally {
-				resolve();
-			}
-        })
-    })
-}
+
 
 async 
 function signInfo() {
