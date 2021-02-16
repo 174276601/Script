@@ -6,15 +6,15 @@
 食用方法请看Sunert大佬中青看点
 ~~~~~~~~~~~~~~~~
 [MITM]
-hostname = kd.youth.cn, ios.baertt.com 
+hostname = *.youth.cn, ios.baertt.com 
 
 -----------------
 QX 1.0. 7+ :
 [task_local]
-0,30 * * * * https://raw.githubusercontent.com/174276601/Script/main/youth.js
+0,30 * * * * https://raw.githubusercontent.com/jiuli12/Script/main/youth.js
 
 [rewrite_remote]
-https://raw.githubusercontent.com/174276601/Script/main/youth_getCookie.conf, tag=中青GetCookie, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/jiuli12/Script/main/youth_getCookie.conf, tag=中青GetCookie, update-interval=86400, opt-parser=false, enabled=true
 */
 
 let s = 200 //各数据接口延迟
@@ -279,7 +279,35 @@ async function all() {
 	} 
 }
 
-function signInfo() {
+function sign() {
+    return new Promise((resolve, reject) => {
+        const signurl = {
+            url: 'https://kd.youth.cn/TaskCenter/sign',
+            headers: JSON.parse(signheaderVal),
+        }
+        $.post(signurl, (error, response, data) => {
+			try{
+				signres = JSON.parse(data)
+				const date =  $.time(`MMdd`)
+				if (signres.status == 2) {
+				    signresult = `签到失败，Cookie已失效‼️`;
+				    $.msg($.name, signresult, "");
+				    return;
+				} else if (signres.status == 1) {
+				     signresult = `【签到结果】成功 🎉 明日+${signres.nextScore} `
+				} else if (signres.status == 0) {
+				  signresult = `【签到结果】已签到`;
+				}
+			} catch (e) {
+				$.logErr(e, resp)
+			} finally {
+				resolve();
+			}
+        })
+    })
+}
+
+async function signInfo() {
     return new Promise((resolve, reject) => {
         const infourl = {
             url: 'https://kd.youth.cn/TaskCenter/getSign',
