@@ -6,12 +6,12 @@
   "repo": "https://github.com/174276601/Script",
   "apps": [{
     "id": "qqread",
-    "name": "企鹅读书ck",
-    "keys": ["qqheader", "qqurl", "readtime", "cashurl_zq", "cashbody_zq","youthheader_zq2", "read_zq2", "red_zq2", "readtime_zq2", "cashurl_zq2", "cashbody_zq2","youthheader_zq3", "read_zq3", "red_zq3", "readtime_zq3", "cashurl_zq3", "cashbody_zq3"],
+    "name": "企鹅读书",
+    "keys": ["header", "url", "readtime", "cashurl_zq", "cashbody_zq","youthheader_zq2", "read_zq2", "red_zq2", "readtime_zq2", "cashurl_zq2", "cashbody_zq2","youthheader_zq3", "read_zq3", "red_zq3", "readtime_zq3", "cashurl_zq3", "cashbody_zq3"],
     "author": "@174276601",
     "settings": [
       {
-        "id": "zqSuffix",
+        "id": "241461606",
         "name": "当前账号",
         "val": "1",
         "type": "number",
