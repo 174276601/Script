@@ -11,14 +11,14 @@
     "author": "@174276601",
     "settings": [
       {
-        "id": "241461606",
+        "id": "qqreadSuffix",
         "name": "当前账号",
         "val": "1",
         "type": "number",
         "desc": "当前抓取ck记录的账号序号，如：1、2、3目前仅支持3账号"
       },
       {
-        "id": "zqCount",
+        "id": "qqreadCount",
         "name": "账号个数",
         "val": "1",
         "type": "number",
