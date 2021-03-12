@@ -25,9 +25,9 @@
         "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
       }
     ],
-    "repo": "https://raw.githubusercontent.com/174276601/Script/main/qq.js",
+    "repo": "https://raw.githubusercontent.com/174276601/Script/main/qqread.js",
     "icons": ["https://raw.githubusercontent.com/174276601/Script/main/image/youth.png", "https://raw.githubusercontent.com/174276601/Script/main/image/youth.png"],
-    "script": "https://raw.githubusercontent.com/174276601/Script/main/qq.js"
+    "script": "https://raw.githubusercontent.com/174276601/Script/main/qqread.js"
   },{
     "id": "youthZDRead",
     "name": "中青多账号阅读",
